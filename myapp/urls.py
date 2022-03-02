@@ -1,7 +1,8 @@
 from django.urls import path
 from . import views
+from .views import wellcome
 urlpatterns = [
-    path('',views.wellcome),
+    path('',wellcome),
     path('group/',views.GroupView.as_view()),
     path('group/<str:pk>/',views.GroupView.as_view()),
     path('Assessable_value/',views.Assessable_valueView.as_view()),

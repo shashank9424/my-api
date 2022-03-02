@@ -11,8 +11,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 # Create your views here.
 
-def wellcome():
-    return HttpResponse("wellcome to hamar gola ")
+def wellcome(a):
+    return HttpResponse("wellcome user")
 #Group view 
 
 class GroupView(APIView):
