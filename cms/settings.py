@@ -43,11 +43,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
 ]
-CORS_ALLOWED_ORIGINS = [
-    "https://shashank-api.herokuapp.com/",
-    "https://shashank-api.herokuapp.com/",
-   
-]
+
 
 
 ROOT_URLCONF = 'cms.urls'
