@@ -14,6 +14,9 @@ SECRET_KEY = 'django-insecure-wka)1-8gtn6-h1k1@fqu25#_30l=4w6hhz9i!^t0kgw2n$-lzs
 DEBUG = True
 
 ALLOWED_HOSTS = ['shashank-api.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = [
+    'https://shashank-api.herokuapp.com'
+]
 
 
 # Application definition
