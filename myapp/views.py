@@ -16,13 +16,13 @@ def wellcome():
 #Group view 
 
 class GroupView(APIView):
-    authentication_classes = [ JWTAuthentication ]  
-    permission_classes = (IsAuthenticated,)
+    #authentication_classes = [ JWTAuthentication ]  
+    #permission_classes = (IsAuthenticated,)
 
     def get(self,request,pk=None):
         data= request.GET
         user = request.user
-        user_status = user.is_superuser
+        user_status = user
         if user_status:
             if pk:
                 if not Group.objects.filter(pk=pk).exists():
