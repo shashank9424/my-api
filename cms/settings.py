@@ -84,7 +84,7 @@ DATABASES = {
 'default': {
     'ENGINE': 'django.db.backends.mysql',
     'NAME': 'task2',
-    'HOST': '127.0.0.1',
+    'HOST': 'shashank-api.herokuapp.com',
     'PORT': '3306',
     'USER': 'root',
     'PASSWORD': 'root',
