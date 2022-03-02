@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('/',views.wellcome),
+    path('',views.wellcome),
     path('group/',views.GroupView.as_view()),
     path('group/<str:pk>/',views.GroupView.as_view()),
     path('Assessable_value/',views.Assessable_valueView.as_view()),
